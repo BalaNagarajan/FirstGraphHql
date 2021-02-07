@@ -1,0 +1,19 @@
+schema {
+  query: Query
+}
+
+
+type Query {
+    allVehicles: [Vehicle]
+    vehicle(no: String): Vehicle
+
+}
+
+
+type Vehicle {
+  vinNo: String
+  make: String
+  model: String
+  securityFeatures: [String]
+  manufacturedDate: String
+}
